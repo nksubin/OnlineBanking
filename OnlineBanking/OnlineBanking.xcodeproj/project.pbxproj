@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40EE85071B3D37C500CD251D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE85061B3D37C500CD251D /* main.m */; };
+		40EE850A1B3D37C500CD251D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE85091B3D37C500CD251D /* AppDelegate.m */; };
+		40EE85101B3D37C500CD251D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EE850E1B3D37C500CD251D /* Main.storyboard */; };
+		40EE85121B3D37C500CD251D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EE85111B3D37C500CD251D /* Images.xcassets */; };
+		40EE85151B3D37C500CD251D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EE85131B3D37C500CD251D /* LaunchScreen.xib */; };
+		40EE85211B3D37C500CD251D /* OnlineBankingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE85201B3D37C500CD251D /* OnlineBankingTests.m */; };
+		40EE85331B3D3A1F00CD251D /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE85321B3D3A1F00CD251D /* LoginVC.m */; };
+		40EE85391B3D3EF500CD251D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85351B3D3EF500CD251D /* Social.framework */; };
+		40EE853A1B3D3EF500CD251D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85361B3D3EF500CD251D /* Accounts.framework */; };
+		40EE853B1B3D3EF500CD251D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85371B3D3EF500CD251D /* AudioToolbox.framework */; };
+		40EE853C1B3D3EF500CD251D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85381B3D3EF500CD251D /* CFNetwork.framework */; };
+		40EE85491B3D3F0D00CD251D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE853D1B3D3F0D00CD251D /* CoreGraphics.framework */; };
+		40EE854A1B3D3F0D00CD251D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE853E1B3D3F0D00CD251D /* CoreLocation.framework */; };
+		40EE854B1B3D3F0D00CD251D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE853F1B3D3F0D00CD251D /* Foundation.framework */; };
+		40EE854C1B3D3F0D00CD251D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85401B3D3F0D00CD251D /* libsqlite3.dylib */; };
+		40EE854D1B3D3F0D00CD251D /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85411B3D3F0D00CD251D /* libz.1.1.3.dylib */; };
+		40EE854E1B3D3F0D00CD251D /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85421B3D3F0D00CD251D /* libstdc++.6.dylib */; };
+		40EE854F1B3D3F0D00CD251D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85431B3D3F0D00CD251D /* MobileCoreServices.framework */; };
+		40EE85501B3D3F0D00CD251D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85441B3D3F0D00CD251D /* QuartzCore.framework */; };
+		40EE85511B3D3F0D00CD251D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85451B3D3F0D00CD251D /* Security.framework */; };
+		40EE85521B3D3F0D00CD251D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85461B3D3F0D00CD251D /* StoreKit.framework */; };
+		40EE85531B3D3F0D00CD251D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85471B3D3F0D00CD251D /* SystemConfiguration.framework */; };
+		40EE85541B3D3F0D00CD251D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE85481B3D3F0D00CD251D /* UIKit.framework */; };
+		40EE855A1B3D3FB000CD251D /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE85571B3D3FB000CD251D /* CustomTextField.m */; };
+		40EE855B1B3D3FB000CD251D /* MHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE85591B3D3FB000CD251D /* MHTextField.m */; };
+		40EE855E1B3D60DE00CD251D /* AccountsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE855D1B3D60DE00CD251D /* AccountsVC.m */; };
+		40EE85621B3D758200CD251D /* ConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE85611B3D758200CD251D /* ConfirmVC.m */; };
+		40F422971B3FF3D600783D51 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F422941B3FF3D600783D51 /* Bolts.framework */; };
+		40F422981B3FF3D600783D51 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F422951B3FF3D600783D51 /* Parse.framework */; };
+		40F422991B3FF3D600783D51 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F422961B3FF3D600783D51 /* ParseUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40EE851B1B3D37C500CD251D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40EE84F91B3D37C500CD251D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40EE85001B3D37C500CD251D;
+			remoteInfo = OnlineBanking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40EE85011B3D37C500CD251D /* OnlineBanking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineBanking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40EE85051B3D37C500CD251D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40EE85061B3D37C500CD251D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40EE85081B3D37C500CD251D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40EE85091B3D37C500CD251D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40EE850F1B3D37C500CD251D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40EE85111B3D37C500CD251D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		40EE85141B3D37C500CD251D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		40EE851A1B3D37C500CD251D /* OnlineBankingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineBankingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40EE851F1B3D37C500CD251D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40EE85201B3D37C500CD251D /* OnlineBankingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlineBankingTests.m; sourceTree = "<group>"; };
+		40EE85311B3D3A1E00CD251D /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = LoginModule/LoginVC.h; sourceTree = "<group>"; };
+		40EE85321B3D3A1F00CD251D /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = LoginModule/LoginVC.m; sourceTree = "<group>"; };
+		40EE85351B3D3EF500CD251D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		40EE85361B3D3EF500CD251D /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		40EE85371B3D3EF500CD251D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		40EE85381B3D3EF500CD251D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		40EE853D1B3D3F0D00CD251D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		40EE853E1B3D3F0D00CD251D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		40EE853F1B3D3F0D00CD251D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40EE85401B3D3F0D00CD251D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		40EE85411B3D3F0D00CD251D /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		40EE85421B3D3F0D00CD251D /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		40EE85431B3D3F0D00CD251D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		40EE85441B3D3F0D00CD251D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		40EE85451B3D3F0D00CD251D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		40EE85461B3D3F0D00CD251D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		40EE85471B3D3F0D00CD251D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		40EE85481B3D3F0D00CD251D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		40EE85561B3D3FB000CD251D /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		40EE85571B3D3FB000CD251D /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		40EE85581B3D3FB000CD251D /* MHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTextField.h; sourceTree = "<group>"; };
+		40EE85591B3D3FB000CD251D /* MHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTextField.m; sourceTree = "<group>"; };
+		40EE855C1B3D60DE00CD251D /* AccountsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountsVC.h; path = Accounts/AccountsVC.h; sourceTree = "<group>"; };
+		40EE855D1B3D60DE00CD251D /* AccountsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountsVC.m; path = Accounts/AccountsVC.m; sourceTree = "<group>"; };
+		40EE85601B3D758200CD251D /* ConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfirmVC.h; path = Accounts/ConfirmVC.h; sourceTree = "<group>"; };
+		40EE85611B3D758200CD251D /* ConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfirmVC.m; path = Accounts/ConfirmVC.m; sourceTree = "<group>"; };
+		40F422941B3FF3D600783D51 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		40F422951B3FF3D600783D51 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		40F422961B3FF3D600783D51 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40EE84FE1B3D37C500CD251D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE854E1B3D3F0D00CD251D /* libstdc++.6.dylib in Frameworks */,
+				40EE854F1B3D3F0D00CD251D /* MobileCoreServices.framework in Frameworks */,
+				40EE854C1B3D3F0D00CD251D /* libsqlite3.dylib in Frameworks */,
+				40EE85501B3D3F0D00CD251D /* QuartzCore.framework in Frameworks */,
+				40EE85541B3D3F0D00CD251D /* UIKit.framework in Frameworks */,
+				40EE85511B3D3F0D00CD251D /* Security.framework in Frameworks */,
+				40EE853C1B3D3EF500CD251D /* CFNetwork.framework in Frameworks */,
+				40EE854A1B3D3F0D00CD251D /* CoreLocation.framework in Frameworks */,
+				40EE85531B3D3F0D00CD251D /* SystemConfiguration.framework in Frameworks */,
+				40EE854B1B3D3F0D00CD251D /* Foundation.framework in Frameworks */,
+				40F422991B3FF3D600783D51 /* ParseUI.framework in Frameworks */,
+				40F422981B3FF3D600783D51 /* Parse.framework in Frameworks */,
+				40EE85491B3D3F0D00CD251D /* CoreGraphics.framework in Frameworks */,
+				40EE85391B3D3EF500CD251D /* Social.framework in Frameworks */,
+				40F422971B3FF3D600783D51 /* Bolts.framework in Frameworks */,
+				40EE853A1B3D3EF500CD251D /* Accounts.framework in Frameworks */,
+				40EE85521B3D3F0D00CD251D /* StoreKit.framework in Frameworks */,
+				40EE854D1B3D3F0D00CD251D /* libz.1.1.3.dylib in Frameworks */,
+				40EE853B1B3D3EF500CD251D /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40EE85171B3D37C500CD251D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40EE84F81B3D37C500CD251D = {
+			isa = PBXGroup;
+			children = (
+				40EE85031B3D37C500CD251D /* OnlineBanking */,
+				40EE852A1B3D37E700CD251D /* Frameworks */,
+				40EE851D1B3D37C500CD251D /* OnlineBankingTests */,
+				40EE85021B3D37C500CD251D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40EE85021B3D37C500CD251D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40EE85011B3D37C500CD251D /* OnlineBanking.app */,
+				40EE851A1B3D37C500CD251D /* OnlineBankingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40EE85031B3D37C500CD251D /* OnlineBanking */ = {
+			isa = PBXGroup;
+			children = (
+				40EE85081B3D37C500CD251D /* AppDelegate.h */,
+				40EE85091B3D37C500CD251D /* AppDelegate.m */,
+				40EE85341B3D3A2A00CD251D /* LoginModule */,
+				40EE855F1B3D60E900CD251D /* Accounts */,
+				40EE850E1B3D37C500CD251D /* Main.storyboard */,
+				40EE85111B3D37C500CD251D /* Images.xcassets */,
+				40EE85131B3D37C500CD251D /* LaunchScreen.xib */,
+				40EE85041B3D37C500CD251D /* Supporting Files */,
+			);
+			path = OnlineBanking;
+			sourceTree = "<group>";
+		};
+		40EE85041B3D37C500CD251D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40EE85551B3D3FB000CD251D /* Textbox */,
+				40EE85051B3D37C500CD251D /* Info.plist */,
+				40EE85061B3D37C500CD251D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40EE851D1B3D37C500CD251D /* OnlineBankingTests */ = {
+			isa = PBXGroup;
+			children = (
+				40EE85201B3D37C500CD251D /* OnlineBankingTests.m */,
+				40EE851E1B3D37C500CD251D /* Supporting Files */,
+			);
+			path = OnlineBankingTests;
+			sourceTree = "<group>";
+		};
+		40EE851E1B3D37C500CD251D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40EE851F1B3D37C500CD251D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40EE852A1B3D37E700CD251D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40F422941B3FF3D600783D51 /* Bolts.framework */,
+				40F422951B3FF3D600783D51 /* Parse.framework */,
+				40F422961B3FF3D600783D51 /* ParseUI.framework */,
+				40EE85351B3D3EF500CD251D /* Social.framework */,
+				40EE85361B3D3EF500CD251D /* Accounts.framework */,
+				40EE85371B3D3EF500CD251D /* AudioToolbox.framework */,
+				40EE85381B3D3EF500CD251D /* CFNetwork.framework */,
+				40EE853D1B3D3F0D00CD251D /* CoreGraphics.framework */,
+				40EE853E1B3D3F0D00CD251D /* CoreLocation.framework */,
+				40EE853F1B3D3F0D00CD251D /* Foundation.framework */,
+				40EE85401B3D3F0D00CD251D /* libsqlite3.dylib */,
+				40EE85411B3D3F0D00CD251D /* libz.1.1.3.dylib */,
+				40EE85421B3D3F0D00CD251D /* libstdc++.6.dylib */,
+				40EE85431B3D3F0D00CD251D /* MobileCoreServices.framework */,
+				40EE85441B3D3F0D00CD251D /* QuartzCore.framework */,
+				40EE85451B3D3F0D00CD251D /* Security.framework */,
+				40EE85461B3D3F0D00CD251D /* StoreKit.framework */,
+				40EE85471B3D3F0D00CD251D /* SystemConfiguration.framework */,
+				40EE85481B3D3F0D00CD251D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			path = OnlineBankingTests;
+			sourceTree = "<group>";
+		};
+		40EE85341B3D3A2A00CD251D /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				40EE85311B3D3A1E00CD251D /* LoginVC.h */,
+				40EE85321B3D3A1F00CD251D /* LoginVC.m */,
+			);
+			name = LoginModule;
+			sourceTree = "<group>";
+		};
+		40EE85551B3D3FB000CD251D /* Textbox */ = {
+			isa = PBXGroup;
+			children = (
+				40EE85561B3D3FB000CD251D /* CustomTextField.h */,
+				40EE85571B3D3FB000CD251D /* CustomTextField.m */,
+				40EE85581B3D3FB000CD251D /* MHTextField.h */,
+				40EE85591B3D3FB000CD251D /* MHTextField.m */,
+			);
+			path = Textbox;
+			sourceTree = "<group>";
+		};
+		40EE855F1B3D60E900CD251D /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				40EE855C1B3D60DE00CD251D /* AccountsVC.h */,
+				40EE855D1B3D60DE00CD251D /* AccountsVC.m */,
+				40EE85601B3D758200CD251D /* ConfirmVC.h */,
+				40EE85611B3D758200CD251D /* ConfirmVC.m */,
+			);
+			name = Accounts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40EE85001B3D37C500CD251D /* OnlineBanking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40EE85241B3D37C500CD251D /* Build configuration list for PBXNativeTarget "OnlineBanking" */;
+			buildPhases = (
+				40EE84FD1B3D37C500CD251D /* Sources */,
+				40EE84FE1B3D37C500CD251D /* Frameworks */,
+				40EE84FF1B3D37C500CD251D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnlineBanking;
+			productName = OnlineBanking;
+			productReference = 40EE85011B3D37C500CD251D /* OnlineBanking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40EE85191B3D37C500CD251D /* OnlineBankingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40EE85271B3D37C500CD251D /* Build configuration list for PBXNativeTarget "OnlineBankingTests" */;
+			buildPhases = (
+				40EE85161B3D37C500CD251D /* Sources */,
+				40EE85171B3D37C500CD251D /* Frameworks */,
+				40EE85181B3D37C500CD251D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40EE851C1B3D37C500CD251D /* PBXTargetDependency */,
+			);
+			name = OnlineBankingTests;
+			productName = OnlineBankingTests;
+			productReference = 40EE851A1B3D37C500CD251D /* OnlineBankingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40EE84F91B3D37C500CD251D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "National Plus";
+				TargetAttributes = {
+					40EE85001B3D37C500CD251D = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					40EE85191B3D37C500CD251D = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 40EE85001B3D37C500CD251D;
+					};
+				};
+			};
+			buildConfigurationList = 40EE84FC1B3D37C500CD251D /* Build configuration list for PBXProject "OnlineBanking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40EE84F81B3D37C500CD251D;
+			productRefGroup = 40EE85021B3D37C500CD251D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40EE85001B3D37C500CD251D /* OnlineBanking */,
+				40EE85191B3D37C500CD251D /* OnlineBankingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40EE84FF1B3D37C500CD251D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE85101B3D37C500CD251D /* Main.storyboard in Resources */,
+				40EE85151B3D37C500CD251D /* LaunchScreen.xib in Resources */,
+				40EE85121B3D37C500CD251D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40EE85181B3D37C500CD251D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40EE84FD1B3D37C500CD251D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE855E1B3D60DE00CD251D /* AccountsVC.m in Sources */,
+				40EE85621B3D758200CD251D /* ConfirmVC.m in Sources */,
+				40EE855A1B3D3FB000CD251D /* CustomTextField.m in Sources */,
+				40EE850A1B3D37C500CD251D /* AppDelegate.m in Sources */,
+				40EE855B1B3D3FB000CD251D /* MHTextField.m in Sources */,
+				40EE85071B3D37C500CD251D /* main.m in Sources */,
+				40EE85331B3D3A1F00CD251D /* LoginVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40EE85161B3D37C500CD251D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE85211B3D37C500CD251D /* OnlineBankingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40EE851C1B3D37C500CD251D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40EE85001B3D37C500CD251D /* OnlineBanking */;
+			targetProxy = 40EE851B1B3D37C500CD251D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40EE850E1B3D37C500CD251D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40EE850F1B3D37C500CD251D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40EE85131B3D37C500CD251D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40EE85141B3D37C500CD251D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40EE85221B3D37C500CD251D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40EE85231B3D37C500CD251D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40EE85251B3D37C500CD251D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnlineBankingTests",
+				);
+				INFOPLIST_FILE = OnlineBanking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		40EE85261B3D37C500CD251D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnlineBankingTests",
+				);
+				INFOPLIST_FILE = OnlineBanking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		40EE85281B3D37C500CD251D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OnlineBankingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineBanking.app/OnlineBanking";
+			};
+			name = Debug;
+		};
+		40EE85291B3D37C500CD251D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OnlineBankingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineBanking.app/OnlineBanking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40EE84FC1B3D37C500CD251D /* Build configuration list for PBXProject "OnlineBanking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40EE85221B3D37C500CD251D /* Debug */,
+				40EE85231B3D37C500CD251D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40EE85241B3D37C500CD251D /* Build configuration list for PBXNativeTarget "OnlineBanking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40EE85251B3D37C500CD251D /* Debug */,
+				40EE85261B3D37C500CD251D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40EE85271B3D37C500CD251D /* Build configuration list for PBXNativeTarget "OnlineBankingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40EE85281B3D37C500CD251D /* Debug */,
+				40EE85291B3D37C500CD251D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40EE84F91B3D37C500CD251D /* Project object */;
+}
